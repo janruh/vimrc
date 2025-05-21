@@ -56,6 +56,7 @@ mru.vim https://github.com/vim-scripts/mru.vim
 editorconfig-vim https://github.com/editorconfig/editorconfig-vim
 dracula https://github.com/dracula/vim
 copilot.vim https://github.com/github/copilot.vim
+copilot-chat.vim https://github.com/DanBradbury/copilot-chat.vim.git
 """.strip()
 
 GITHUB_ZIP = "%s/archive/master.zip"
