@@ -33,14 +33,14 @@ au FileType javascript,typescript inoremap <buffer> $r return
 au FileType javascript,typescript inoremap <buffer> $f // --- PH<esc>FP2xi
 
 function! JavaScriptFold() 
-    setl foldmethod=syntax
-    setl foldlevelstart=1
-    syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
-
-    function! FoldText()
-        return substitute(getline(v:foldstart), '{.*', '{...}', '')
-    endfunction
-    setl foldtext=FoldText()
+"    setl foldmethod=syntax
+"    setl foldlevelstart=1
+"    syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
+"
+"    function! FoldText()
+"        return substitute(getline(v:foldstart), '{.*', '{...}', '')
+"    endfunction
+"    setl foldtext=FoldText()
 endfunction
 
 
