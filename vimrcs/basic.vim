@@ -52,6 +52,11 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
+" Open a new Cpilot Chat window
+nnoremap <leader>cc :CopilotChatOpen<cr>
+"
+" " Add visual selection to copilot window
+vmap <leader>a <Plug>CopilotChatAddSelection"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
